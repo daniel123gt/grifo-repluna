@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+  themes: light --default;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-light-green: #F6F6E9;
+    --color-primary-green: #91CA37;
+    --color-secondary-green: #639E2C;
+    --color-dark-green: #32620E;
+    --color-gray-bg: #3a3a3a;
+    --color-gray-light: #9ba09b;
+}
+
+.breadcrumbs{
+  @apply text-gray-light!;
+}
+
+html,
+body {
+  @apply bg-white;
+}
