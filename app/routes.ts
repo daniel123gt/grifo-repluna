@@ -8,6 +8,8 @@ export default [
     route('abrir-caja', 'routes/opencash.tsx'),
     route('cerrar-caja', 'routes/closecash.tsx'),
     route('empleados', 'routes/employees.tsx'),
+    route('stock', 'routes/stock.tsx'),
+    route('caja', 'routes/cash.tsx')
   ]),
   route('login', 'routes/login.tsx'),
 ] satisfies RouteConfig;

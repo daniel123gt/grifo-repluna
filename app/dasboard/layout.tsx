@@ -14,21 +14,21 @@ const linksRoutes = [
     isEnd: false,
   },
   {
-    href: '/dashboard/abrir-caja',
-    text: 'Abrir Caja',
+    href: '/dashboard/caja',
+    text: 'Caja',
     icon: 'fa-solid fa-folder-tree',
-    isEnd: false,
-  },
-  {
-    href: '/dashboard/cerrar-caja',
-    text: 'Cerrar Caja',
-    icon: 'fa-solid fa-box',
     isEnd: false,
   },
   {
     href: '/dashboard/empleados',
     text: 'Empleados',
     icon: 'fa-solid fa-person',
+    isEnd: false,
+  },
+  {
+    href: '/dashboard/stock',
+    text: 'Stock',
+    icon: 'fa-solid fa-bucket',
     isEnd: false,
   },
 ];

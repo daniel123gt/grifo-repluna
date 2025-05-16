@@ -88,10 +88,10 @@ export function SaleDashboard() {
                     <li>Venta</li>
                 </ul>
             </div>
-            <div className='pt-8'>
+            <div className='pt-12'>
                 <div className='flex justify-between'>
                     <h1 className='text-4xl text-dark-green font-semibold uppercase'>Ventas</h1>
-                    <button className="btn bg-secondary-green text-white" onClick={() => showModalHandle()}>Registrar Nueva Venta</button>
+                    <button className="btn bg-secondary-green text-white" onClick={() => showModalHandle()}><i className="fa-solid fa-cart-plus"></i>  Nueva Venta</button>
                 </div>
 
                 <div className='grid grid-cols-12 pt-8 gap-6'>

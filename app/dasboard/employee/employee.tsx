@@ -25,34 +25,44 @@ const cards = [
 export function Employee() {
   return (
     <div>
+      <div className="breadcrumbs text-sm">
+        <ul>
+          <li>Dashboard</li>
+          <li>Inicio</li>
+          <li>Empleados</li>
+        </ul>
+      </div>
       <div className='pt-12'>
-        <h1 className='text-4xl text-dark-green font-semibold uppercase'>
-          Empleados
-        </h1>
-        <div className='flex items-center gap-12 justify-end pt-8'>
-          <button className='btn btn-outline'>Volver</button>
-          <button className='outline-none bg-secondary-green btn text-white'>
-            Nuevo Empleado
-          </button>
+        <div className='flex items-center gap-12 justify-between pb-8'>
+          <h1 className='text-4xl text-dark-green font-semibold uppercase'>
+            Empleados
+          </h1>
+          <div className='flex gap-4'>
+            <button className='btn btn-outline'><i className="fa-solid fa-arrow-left"></i> Volver</button>
+            <button className='outline-none bg-secondary-green btn text-white'>
+              <i className="fa-solid fa-user-plus"></i> Nuevo Empleado
+            </button>
+          </div>
+
         </div>
-        <div className='flex gap-12 pt-12'>
-          {cards.map((item, index) => (
-            <div className='stat '>
+        <div className='w-full pt-12'>
+          <div className='stats bg-base-100 border-base-300 border w-full'>
+            {cards.map((item, index) => (
               <CardGeneric
                 text1={item.text1}
                 text2={item.text2}
                 text3={item.text3}
                 key={index}
               />
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className='pt-16 flex flex-col gap-8'>
           <h1 className='text-4xl text-dark-green font-semibold uppercase'>
             Lista de Empleados
           </h1>
-          <div className='overflow-x-auto rounded-box border border-primary-green/30 bg-white-green text-dark-green! p-6 shadow'>
+          <div className='overflow-x-auto rounded-box border border-dark-green/20 bg-white-green text-dark-green! p-6 shadow'>
             <table className='table'>
               <thead className='border-b-2 border-b-primary-green/20'>
                 <tr className='text-dark-green text-lg'>
@@ -81,7 +91,8 @@ export function Employee() {
                   </td>
                   <td>
                     {' '}
-                    <button className='btn btn-ghost btn-xs'>details</button>
+                    <button className='btn btn-ghost btn-sm'>Ver</button>
+                    <button className='btn btn-ghost btn-sm'>Editar</button>
                   </td>
                 </tr>
               </tbody>
